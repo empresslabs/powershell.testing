@@ -23,12 +23,12 @@
     <Copyright>Copyright (c) 2024 Bruno Sales &lt;me@baliestri.dev&gt;</Copyright>
     <Company>EmpressLabs</Company>
     <PackageId>Empress.Labs.PowerShell.TestTools</PackageId>
-    <PackageProjectUrl>https://github.com/empresslabs/powershell.testing</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/empresslabs/powershell.testtools</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
-    <RepositoryUrl>https://github.com/empresslabs/powershell.testing.git</RepositoryUrl>
+    <RepositoryUrl>https://github.com/empresslabs/powershell.testtools.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageTags>powershell;testing;empresslabs;empress;labs</PackageTags>
+    <PackageTags>powershell;test;tools;testtools;empresslabs;empress;labs</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
