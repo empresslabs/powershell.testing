@@ -6,7 +6,7 @@ This library provides some utilities to help you write tests for your PowerShell
 ## Installation
 
 ```shell
-dotnet add [<PROJECT>] package Empress.Labs.PowerShell.Testing
+dotnet add [<PROJECT>] package Empress.Labs.PowerShell.TestTools
 ```
 
 ## License
@@ -14,9 +14,9 @@ dotnet add [<PROJECT>] package Empress.Labs.PowerShell.Testing
 This project is licensed under the MIT License - see the [LICENSE][1] file for
 details.
 
-[0]: https://raw.githubusercontent.com/empresslabs/powershell.testing/refs/heads/main/.github/assets/logo.svg
+[0]: https://raw.githubusercontent.com/empresslabs/powershell.testtools/refs/heads/main/.github/assets/logo.svg
 
-[1]: https://github.com/empresslabs/powershell.testing/blob/main/LICENSE.md
+[1]: https://github.com/empresslabs/powershell.testtools/blob/main/LICENSE.md
 
 [2]: https://pester.dev/
 
@@ -25,4 +25,3 @@ details.
 [4]: https://xunit.net/
 
 [5]: https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-mstest
-
