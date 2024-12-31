@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AB38E467-3223-4A50-8E4E-4C23EFBF0484}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		LICENSE.md = LICENSE.md
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Properties", "Properties", "{0E8F021D-58F0-436C-90C0-B2F40CA64726}"
+	ProjectSection(SolutionItems) = preProject
+		Empress.Labs.props = Empress.Labs.props
+		Empress.Labs.targets = Empress.Labs.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{AE26E02F-4D0B-41D8-8D66-10DF557FD957}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{D47327A1-01D6-4BCC-8E4F-9FD4A271A177}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Empress.Labs.PowerShell.TestTools", "source\Empress.Labs.PowerShell.TestTools\Empress.Labs.PowerShell.TestTools.csproj", "{5A22493E-1D05-4E6F-85EB-0D68336346C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Empress.Labs.PowerShell.TestTools.UnitTesting", "testing\Empress.Labs.PowerShell.TestTools.UnitTesting\Empress.Labs.PowerShell.TestTools.UnitTesting.csproj", "{87574F63-5A73-4BF2-9ECF-F12896B122A3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Empress.Labs.Nuke.Build", "source\Empress.Labs.Nuke.Build\Empress.Labs.Nuke.Build.csproj", "{80CED098-048C-4849-980E-E28036576E27}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0E8F021D-58F0-436C-90C0-B2F40CA64726} = {AB38E467-3223-4A50-8E4E-4C23EFBF0484}
+		{5A22493E-1D05-4E6F-85EB-0D68336346C8} = {AE26E02F-4D0B-41D8-8D66-10DF557FD957}
+		{87574F63-5A73-4BF2-9ECF-F12896B122A3} = {D47327A1-01D6-4BCC-8E4F-9FD4A271A177}
+		{80CED098-048C-4849-980E-E28036576E27} = {AE26E02F-4D0B-41D8-8D66-10DF557FD957}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80CED098-048C-4849-980E-E28036576E27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80CED098-048C-4849-980E-E28036576E27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A22493E-1D05-4E6F-85EB-0D68336346C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A22493E-1D05-4E6F-85EB-0D68336346C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A22493E-1D05-4E6F-85EB-0D68336346C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A22493E-1D05-4E6F-85EB-0D68336346C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87574F63-5A73-4BF2-9ECF-F12896B122A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87574F63-5A73-4BF2-9ECF-F12896B122A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87574F63-5A73-4BF2-9ECF-F12896B122A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87574F63-5A73-4BF2-9ECF-F12896B122A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
