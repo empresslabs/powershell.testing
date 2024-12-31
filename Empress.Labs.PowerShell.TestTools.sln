@@ -21,9 +21,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{AE26E0
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{D47327A1-01D6-4BCC-8E4F-9FD4A271A177}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Empress.Labs.PowerShell.Testing", "source\Empress.Labs.PowerShell.Testing\Empress.Labs.PowerShell.Testing.csproj", "{5A22493E-1D05-4E6F-85EB-0D68336346C8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Empress.Labs.PowerShell.TestTools", "source\Empress.Labs.PowerShell.TestTools\Empress.Labs.PowerShell.TestTools.csproj", "{5A22493E-1D05-4E6F-85EB-0D68336346C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Empress.Labs.PowerShell.Testing.UnitTesting", "testing\Empress.Labs.PowerShell.Testing.UnitTesting\Empress.Labs.PowerShell.Testing.UnitTesting.csproj", "{87574F63-5A73-4BF2-9ECF-F12896B122A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Empress.Labs.PowerShell.TestTools.UnitTesting", "testing\Empress.Labs.PowerShell.TestTools.UnitTesting\Empress.Labs.PowerShell.TestTools.UnitTesting.csproj", "{87574F63-5A73-4BF2-9ECF-F12896B122A3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Empress.Labs.Nuke.Build", "source\Empress.Labs.Nuke.Build\Empress.Labs.Nuke.Build.csproj", "{80CED098-048C-4849-980E-E28036576E27}"
 EndProject

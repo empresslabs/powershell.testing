@@ -4,9 +4,9 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Management.Automation.Runspaces;
 using System.Reflection;
-using Empress.Labs.PowerShell.Testing.Abstractions;
+using Empress.Labs.PowerShell.TestTools.Abstractions;
 
-namespace Empress.Labs.PowerShell.Testing;
+namespace Empress.Labs.PowerShell.TestTools;
 
 /// <summary>
 ///   Invokes a PowerShell cmdlet to be tested.

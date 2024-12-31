@@ -2,9 +2,9 @@
 // See the LICENSE file in the repository root for full license text.
 
 using System.Management.Automation;
-using Empress.Labs.PowerShell.Testing.UnitTesting.Cmdlets;
+using Empress.Labs.PowerShell.TestTools.UnitTesting.Cmdlets;
 
-namespace Empress.Labs.PowerShell.Testing.UnitTesting;
+namespace Empress.Labs.PowerShell.TestTools.UnitTesting;
 
 [TestFixture]
 [TestOf(typeof(PSCmdletInvoker))]

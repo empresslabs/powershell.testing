@@ -3,7 +3,7 @@
 
 using System.Management.Automation.Runspaces;
 
-namespace Empress.Labs.PowerShell.Testing.Abstractions;
+namespace Empress.Labs.PowerShell.TestTools.Abstractions;
 
 /// <summary>
 ///   Prepares the invokation of a cmdlet.

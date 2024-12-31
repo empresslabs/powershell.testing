@@ -2,9 +2,9 @@
 // See the LICENSE file in the repository root for full license text.
 
 using System.Management.Automation.Runspaces;
-using Empress.Labs.PowerShell.Testing.Abstractions;
+using Empress.Labs.PowerShell.TestTools.Abstractions;
 
-namespace Empress.Labs.PowerShell.Testing;
+namespace Empress.Labs.PowerShell.TestTools;
 
 /// <inheritdoc cref="IPrepareCmdletInvokation" />
 internal sealed class PrepareCmdletInvokation : IPrepareCmdletInvokation {

@@ -22,7 +22,7 @@
     <Description>Provides a set of utilities to help you write tests for your PowerShell binary modules.</Description>
     <Copyright>Copyright (c) 2024 Bruno Sales &lt;me@baliestri.dev&gt;</Copyright>
     <Company>EmpressLabs</Company>
-    <PackageId>Empress.Labs.PowerShell.Testing</PackageId>
+    <PackageId>Empress.Labs.PowerShell.TestTools</PackageId>
     <PackageProjectUrl>https://github.com/empresslabs/powershell.testing</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
@@ -40,7 +40,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Empress.Labs.PowerShell.Common" Version="0.1.1" />
+    <PackageReference Include="Empress.Labs.PowerShell.Common" Version="0.1.1"/>
   </ItemGroup>
 
 </Project>
