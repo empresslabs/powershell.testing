@@ -1,10 +1,22 @@
 # ![Empress.Labs.powershell.testtools logo](https://raw.githubusercontent.com/empresslabs/powershell.testtools/refs/heads/main/.github/assets/logo.svg)
 
+## [0.2.0](https://github.com/empresslabs/powershell.testtools/compare/v0.1.1..v0.2.0) - 2025-01-03
+
+### ⚙️ Miscellaneous Tasks
+
+- Add release body content from CHANGELOG.md - ([e17d2f1](https://github.com/empresslabs/powershell.testtools/commit/e17d2f1a13346f56e763c72b53881a2e5d926843))
+- Update `common` dependency to fixed version - ([32ab0d7](https://github.com/empresslabs/powershell.testtools/commit/32ab0d7c3621b4123350b908a298d0480e1c2b0d))
+
+
 ## [0.1.1](https://github.com/empresslabs/powershell.testtools/compare/v0.1.0..v0.1.1) - 2024-12-31
 
 ### 🎨 Styling
 
 - Fix uris - ([6ccd74d](https://github.com/empresslabs/powershell.testtools/commit/6ccd74d6ae3b82658f44e4cc3e14b350ad326500))
+
+### ⚙️ Miscellaneous Tasks
+
+- Generate changelog - ([4712b8f](https://github.com/empresslabs/powershell.testtools/commit/4712b8f2f313e9d738dbb176943b50d6d223c031))
 
 
 ## [0.1.0] - 2024-12-31
