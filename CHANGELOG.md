@@ -1,5 +1,23 @@
 # ![Empress.Labs.powershell.testtools logo](https://raw.githubusercontent.com/empresslabs/powershell.testtools/refs/heads/main/.github/assets/logo.svg)
 
+## [0.3.2](https://github.com/empresslabs/powershell.testtools/compare/v0.3.1..v0.3.2) - 2025-01-03
+
+### 🐛 Bug Fixes
+
+- Execution policy does not works on unix - ([819e547](https://github.com/empresslabs/powershell.testtools/commit/819e547ccaeb8370fb403740c60d8c95f381a895))
+
+
+## [0.3.1](https://github.com/empresslabs/powershell.testtools/compare/v0.3.0..v0.3.1) - 2025-01-03
+
+### ⛰️  Features
+
+- Change session state execution policy - ([906d04b](https://github.com/empresslabs/powershell.testtools/commit/906d04bc7423c7109110f1e3e72f943ea24456ae))
+
+### 🚜 Refactor
+
+- Use params for path injection - ([471bb67](https://github.com/empresslabs/powershell.testtools/commit/471bb6736f5ebf671d9bd11d71d6fb89acf72627))
+
+
 ## [0.3.0](https://github.com/empresslabs/powershell.testtools/compare/v0.2.0..v0.3.0) - 2025-01-03
 
 ### ⛰️  Features
@@ -17,6 +35,7 @@
 
 ### ⚙️ Miscellaneous Tasks
 
+- Generate changelog - ([a37d558](https://github.com/empresslabs/powershell.testtools/commit/a37d55897ae8243c63aee7cb4d07e5fcfa4c4867))
 - Add SDK dependency - ([0dad37d](https://github.com/empresslabs/powershell.testtools/commit/0dad37d92e47c4bf03935b53aac31adab0ae760e))
 
 
