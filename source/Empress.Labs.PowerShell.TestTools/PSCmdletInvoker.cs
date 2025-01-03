@@ -7,6 +7,7 @@ using System.Reflection;
 using Empress.Labs.PowerShell.Common.Extensions;
 using Empress.Labs.PowerShell.Common.IO;
 using Empress.Labs.PowerShell.TestTools.Abstractions;
+using Microsoft.PowerShell;
 
 namespace Empress.Labs.PowerShell.TestTools;
 
@@ -39,6 +40,7 @@ public static class PSCmdletInvoker {
     modulesFromPath.ForEach(path => initialSessionState.ImportPSModulesFromPath(path));
     initialSessionState.Variables.Add(variableEntries);
     initialSessionState.Commands.Add(new SessionStateCmdletEntry(cmdletName, typeof(TCmdlet), HELP_FILE_NAME));
+    initialSessionState.ExecutionPolicy = ExecutionPolicy.Unrestricted;
 
     var runspace = RunspaceFactory.CreateRunspace(initialSessionState);
     runspace.ApartmentState = ApartmentState.STA;
