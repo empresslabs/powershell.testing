@@ -4,6 +4,8 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Management.Automation.Runspaces;
 using System.Reflection;
+using Empress.Labs.PowerShell.Common.Extensions;
+using Empress.Labs.PowerShell.Common.IO;
 using Empress.Labs.PowerShell.TestTools.Abstractions;
 
 namespace Empress.Labs.PowerShell.TestTools;
@@ -19,9 +21,11 @@ public static class PSCmdletInvoker {
   private static Pipeline createPipeline<TCmdlet>(Action<IPrepareCmdletInvokation>? action = null) where TCmdlet : PSCmdlet {
     IEnumerable<SessionStateVariableEntry> variableEntries = [];
     IEnumerable<CommandParameter> parameters = [];
+    IEnumerable<string> modules = [];
+    IEnumerable<AbsolutePath> modulesFromPath = [];
 
     if (action is not null) {
-      PrepareCmdletInvokation.Configure(action, out variableEntries, out parameters);
+      PrepareCmdletInvokation.Configure(action, out variableEntries, out parameters, out modules, out modulesFromPath);
     }
 
     var cmdletAttribute = typeof(TCmdlet).GetCustomAttribute<CmdletAttribute>(true)
@@ -31,6 +35,8 @@ public static class PSCmdletInvoker {
 
     var initialSessionState = InitialSessionState.CreateDefault2();
 
+    initialSessionState.ImportPSModule(modules.ToArray());
+    modulesFromPath.ForEach(path => initialSessionState.ImportPSModulesFromPath(path));
     initialSessionState.Variables.Add(variableEntries);
     initialSessionState.Commands.Add(new SessionStateCmdletEntry(cmdletName, typeof(TCmdlet), HELP_FILE_NAME));
 

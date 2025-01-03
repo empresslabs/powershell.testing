@@ -46,4 +46,15 @@ public sealed class PSCmdletInvokerTest {
     Assert.That(result.Exception, Is.Not.Null);
     Assert.That(result.Exception.Message, Is.EqualTo("Error message"));
   }
+
+  [Test]
+  public void Invoke_WithFakeModuleCmdlet_ShouldImportModule() {
+    // Act
+    var result = PSCmdletInvoker.Invoke<GetFakeModuleCmdlet>(prepare => prepare
+      .WithPSModule("Microsoft.PowerShell.Management"));
+
+    // Assert
+    Assert.That(result, Is.Not.Null);
+    Assert.That(result.BaseObject, Is.EqualTo("FakeModuleCmdlet"));
+  }
 }
