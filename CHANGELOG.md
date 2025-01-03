@@ -1,5 +1,16 @@
 # ![Empress.Labs.powershell.testtools logo](https://raw.githubusercontent.com/empresslabs/powershell.testtools/refs/heads/main/.github/assets/logo.svg)
 
+## [0.4.1](https://github.com/empresslabs/powershell.testtools/compare/v0.4.0..v0.4.1) - 2025-01-03
+
+### 🐛 Bug Fixes
+
+- Create session state type 2 - ([17bb0ef](https://github.com/empresslabs/powershell.testtools/commit/17bb0efb859737e019246cf2948c9a1a68de4541))
+
+### 🚜 Refactor
+
+- Remove unused code - ([857a170](https://github.com/empresslabs/powershell.testtools/commit/857a1705504fbbc967e5a3c93c64c41a1f66684c))
+
+
 ## [0.4.0](https://github.com/empresslabs/powershell.testtools/compare/v0.3.2..v0.4.0) - 2025-01-03
 
 ### ⛰️  Features
@@ -15,6 +26,10 @@
 
 - Add set location cmdlet test - ([3b9ecab](https://github.com/empresslabs/powershell.testtools/commit/3b9ecabed536b079323660638d2119e1ce3a5a4f))
 - Add set location cmdlet mock - ([2e09007](https://github.com/empresslabs/powershell.testtools/commit/2e090077d1c69366e050d32b22b4ff24fe686134))
+
+### ⚙️ Miscellaneous Tasks
+
+- Generate v0.4.0 CHANGELOG.md - ([91e0d48](https://github.com/empresslabs/powershell.testtools/commit/91e0d484b4a9d91e6eb3ea9fc3dfa98797549b49))
 
 
 ## [0.3.2](https://github.com/empresslabs/powershell.testtools/compare/v0.3.1..v0.3.2) - 2025-01-03
