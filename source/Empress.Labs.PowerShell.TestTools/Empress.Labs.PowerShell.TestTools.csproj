@@ -41,6 +41,7 @@
 
   <ItemGroup>
     <PackageReference Include="Empress.Labs.PowerShell.Common" Version="0.2.1"/>
+    <PackageReference Include="Microsoft.PowerShell.SDK" Version="7.4.6"/>
   </ItemGroup>
 
 </Project>
