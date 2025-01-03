@@ -4,19 +4,22 @@
 using System.Management.Automation.Runspaces;
 using Empress.Labs.PowerShell.Common.IO;
 using Empress.Labs.PowerShell.TestTools.Abstractions;
+using Empress.Labs.PowerShell.TestTools.Options;
+using Microsoft.PowerShell;
 
 namespace Empress.Labs.PowerShell.TestTools;
 
 /// <inheritdoc cref="IPrepareCmdletInvokation" />
 internal sealed class PrepareCmdletInvokation : IPrepareCmdletInvokation {
-  public readonly List<string> Modules = [];
-  public readonly List<AbsolutePath> ModulesFromPath = [];
-  public readonly List<CommandParameter> Parameters = [];
-  public readonly List<SessionStateVariableEntry> VariableEntries = [];
+  private readonly List<string> _modules = [];
+  private readonly List<AbsolutePath> _modulesFromPath = [];
+  private readonly List<CommandParameter> _parameters = [];
+  private readonly List<SessionStateVariableEntry> _variableEntries = [];
+  private ExecutionPolicy? _executionPolicy;
 
   /// <inheritdoc />
   public IPrepareCmdletInvokation WithVariableEntry(SessionStateVariableEntry variableEntry) {
-    VariableEntries.Add(variableEntry);
+    _variableEntries.Add(variableEntry);
 
     return this;
   }
@@ -27,7 +30,7 @@ internal sealed class PrepareCmdletInvokation : IPrepareCmdletInvokation {
 
   /// <inheritdoc />
   public IPrepareCmdletInvokation WithParameter(CommandParameter commandParameter) {
-    Parameters.Add(commandParameter);
+    _parameters.Add(commandParameter);
 
     return this;
   }
@@ -38,14 +41,21 @@ internal sealed class PrepareCmdletInvokation : IPrepareCmdletInvokation {
 
   /// <inheritdoc />
   public IPrepareCmdletInvokation WithPSModule(params string[] moduleCollection) {
-    Modules.AddRange(moduleCollection);
+    _modules.AddRange(moduleCollection);
 
     return this;
   }
 
   /// <inheritdoc />
   public IPrepareCmdletInvokation WithPSModuleFromPath(params AbsolutePath[] pathCollection) {
-    ModulesFromPath.AddRange(pathCollection);
+    _modulesFromPath.AddRange(pathCollection);
+
+    return this;
+  }
+
+  /// <inheritdoc />
+  public IPrepareCmdletInvokation WithExecutionPolicy(ExecutionPolicy executionPolicy) {
+    _executionPolicy = executionPolicy;
 
     return this;
   }
@@ -54,18 +64,17 @@ internal sealed class PrepareCmdletInvokation : IPrepareCmdletInvokation {
   ///   Configures the invokation of a cmdlet using the provided configuration.
   /// </summary>
   /// <param name="configure">The action to prepare the invokation.</param>
-  /// <param name="variableEntries">The variable entries to be used.</param>
-  /// <param name="parameters">The parameters to be used.</param>
-  /// <param name="modules">The modules to be imported.</param>
-  /// <param name="modulesFromPath">The modules to be imported from the path.</param>
-  public static void Configure(Action<IPrepareCmdletInvokation> configure, out IEnumerable<SessionStateVariableEntry> variableEntries,
-  out IEnumerable<CommandParameter> parameters, out IEnumerable<string> modules, out IEnumerable<AbsolutePath> modulesFromPath) {
+  /// <param name="options">The options to be used when invoking the cmdlet.</param>
+  public static void Configure(Action<IPrepareCmdletInvokation> configure, out CmdletInvokationOptions options) {
     var prepareCmdletInvokation = new PrepareCmdletInvokation();
     configure(prepareCmdletInvokation);
 
-    variableEntries = prepareCmdletInvokation.VariableEntries;
-    parameters = prepareCmdletInvokation.Parameters;
-    modules = prepareCmdletInvokation.Modules;
-    modulesFromPath = prepareCmdletInvokation.ModulesFromPath;
+    options = new CmdletInvokationOptions {
+      Modules = prepareCmdletInvokation._modules,
+      ModulesFromPath = prepareCmdletInvokation._modulesFromPath,
+      Parameters = prepareCmdletInvokation._parameters,
+      VariableEntries = prepareCmdletInvokation._variableEntries,
+      ExecutionPolicy = prepareCmdletInvokation._executionPolicy
+    };
   }
 }
