@@ -20,7 +20,7 @@
   <PropertyGroup Label="Package">
     <Authors>Bruno Sales</Authors>
     <Description>Provides a set of utilities to help you write tests for your PowerShell binary modules.</Description>
-    <Copyright>Copyright (c) 2024 Bruno Sales &lt;me@baliestri.dev&gt;</Copyright>
+    <Copyright>Copyright (c) 2024-2025 Bruno Sales &lt;me@baliestri.dev&gt;</Copyright>
     <Company>EmpressLabs</Company>
     <PackageId>Empress.Labs.PowerShell.TestTools</PackageId>
     <PackageProjectUrl>https://github.com/empresslabs/powershell.testtools</PackageProjectUrl>
@@ -40,7 +40,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Empress.Labs.PowerShell.Common" Version="0.2.1" />
+    <PackageReference Include="Empress.Labs.PowerShell.Common" Version="0.2.1"/>
   </ItemGroup>
 
 </Project>
