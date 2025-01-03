@@ -48,13 +48,15 @@ public sealed class PSCmdletInvokerTest {
   }
 
   [Test]
-  public void Invoke_WithFakeModuleCmdlet_ShouldImportModule() {
-    // Act
-    var result = PSCmdletInvoker.Invoke<GetFakeModuleCmdlet>(prepare => prepare
-      .WithPSModule("Microsoft.PowerShell.Management"));
+  public void Invoke_WithSetLocationCmdlet_ShouldNotThrow() {
+    // Arrange
+    const string TARGET_LOCATION = "C:\\";
 
     // Assert
-    Assert.That(result, Is.Not.Null);
-    Assert.That(result.BaseObject, Is.EqualTo("FakeModuleCmdlet"));
+    Assert.That(Act, Throws.Nothing);
+    return;
+
+    // Act
+    PSObject? Act() => _ = PSCmdletInvoker.Invoke<SetLocationCmdlet>(prepare => prepare.WithParameter("Path", TARGET_LOCATION));
   }
 }
