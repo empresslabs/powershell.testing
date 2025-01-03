@@ -31,7 +31,7 @@ public static class PSCmdletInvoker {
     var cmdletName = $"{cmdletAttribute.VerbName}-{cmdletAttribute.NounName}";
     var command = new Command(cmdletName);
 
-    var initialSessionState = InitialSessionState.CreateDefault();
+    var initialSessionState = InitialSessionState.CreateDefault2();
 
     initialSessionState.ImportPSModule(options.Modules.ToArray());
     options.ModulesFromPath.ForEach(path => initialSessionState.ImportPSModulesFromPath(path));
