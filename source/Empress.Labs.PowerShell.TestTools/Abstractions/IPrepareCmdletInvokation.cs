@@ -3,6 +3,7 @@
 
 using System.Management.Automation.Runspaces;
 using Empress.Labs.PowerShell.Common.IO;
+using Microsoft.PowerShell;
 
 namespace Empress.Labs.PowerShell.TestTools.Abstractions;
 
@@ -53,4 +54,11 @@ public interface IPrepareCmdletInvokation {
   /// <param name="pathCollection">The collection of paths from which all modules need to be imported.</param>
   /// <returns>The current instance of the configuration.</returns>
   IPrepareCmdletInvokation WithPSModuleFromPath(params AbsolutePath[] pathCollection);
+
+  /// <summary>
+  ///   Set the execution policy for the runspace.
+  /// </summary>
+  /// <param name="executionPolicy">The execution policy to be set.</param>
+  /// <returns>The current instance of the configuration.</returns>
+  IPrepareCmdletInvokation WithExecutionPolicy(ExecutionPolicy executionPolicy);
 }
