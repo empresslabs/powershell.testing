@@ -55,10 +55,4 @@ public sealed class SetLocationCmdlet() : PSCmdletProxy("Microsoft.PowerShell.Ma
   /// <seealso href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/set-location?view=powershell-7.4#notes">Notes</seealso>
   [Parameter(ParameterSetName = STACK_PARAMETER_SET, ValueFromPipelineByPropertyName = true)]
   public string StackName { get; init; } = null!;
-
-  /// <inheritdoc />
-  protected override void OnEndProcessing() {
-    var formattedDate = DateTime.Now.ToString("G");
-    var pwd = SessionState.Path.CurrentLocation.Path;
-  }
 }
