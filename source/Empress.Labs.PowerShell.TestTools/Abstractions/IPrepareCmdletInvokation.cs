@@ -2,6 +2,7 @@
 // See the LICENSE file in the repository root for full license text.
 
 using System.Management.Automation.Runspaces;
+using Empress.Labs.PowerShell.Common.IO;
 
 namespace Empress.Labs.PowerShell.TestTools.Abstractions;
 
@@ -38,4 +39,18 @@ public interface IPrepareCmdletInvokation {
   /// <param name="value">The value of the parameter.</param>
   /// <returns>The current instance of the configuration.</returns>
   IPrepareCmdletInvokation WithParameter(string key, object value);
+
+  /// <summary>
+  ///   Add a list of modules to import when the runspace is created.
+  /// </summary>
+  /// <param name="moduleCollection">The collection of modules to be added.</param>
+  /// <returns>The current instance of the configuration.</returns>
+  IPrepareCmdletInvokation WithPSModule(params string[] moduleCollection);
+
+  /// <summary>
+  ///   Imports all the modules from the specified module path by default.
+  /// </summary>
+  /// <param name="path">Path from which all modules need to be imported.</param>
+  /// <returns>The current instance of the configuration.</returns>
+  IPrepareCmdletInvokation WithPSModuleFromPath(AbsolutePath path);
 }
