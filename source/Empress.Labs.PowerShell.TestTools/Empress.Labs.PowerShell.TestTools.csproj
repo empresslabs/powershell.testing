@@ -40,7 +40,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Empress.Labs.PowerShell.Common" Version="0.1.1"/>
+    <PackageReference Include="Empress.Labs.PowerShell.Common" Version="0.2.1" />
   </ItemGroup>
 
 </Project>
