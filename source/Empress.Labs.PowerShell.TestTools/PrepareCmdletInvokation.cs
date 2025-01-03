@@ -44,8 +44,8 @@ internal sealed class PrepareCmdletInvokation : IPrepareCmdletInvokation {
   }
 
   /// <inheritdoc />
-  public IPrepareCmdletInvokation WithPSModuleFromPath(AbsolutePath path) {
-    ModulesFromPath.Add(path);
+  public IPrepareCmdletInvokation WithPSModuleFromPath(params AbsolutePath[] pathCollection) {
+    ModulesFromPath.AddRange(pathCollection);
 
     return this;
   }
