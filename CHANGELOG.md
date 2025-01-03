@@ -1,10 +1,31 @@
 # ![Empress.Labs.powershell.testtools logo](https://raw.githubusercontent.com/empresslabs/powershell.testtools/refs/heads/main/.github/assets/logo.svg)
 
+## [0.4.0](https://github.com/empresslabs/powershell.testtools/compare/v0.3.2..v0.4.0) - 2025-01-03
+
+### ⛰️  Features
+
+- Add execution policy method and refactor to use options structure - ([60084f1](https://github.com/empresslabs/powershell.testtools/commit/60084f1ea1fc7fdc8f5d8ca7f712d9f3894863a4))
+- Add options structure - ([d1795c7](https://github.com/empresslabs/powershell.testtools/commit/d1795c71cc5fd812562ee25f6019161cd659d66e))
+
+### 🚜 Refactor
+
+- Minor changes to use powershell instead of runspace pipeline - ([dbfbca0](https://github.com/empresslabs/powershell.testtools/commit/dbfbca0a6b43b8ca05c339cf36d20dd9be52bb04))
+
+### 🧪 Testing
+
+- Add set location cmdlet test - ([3b9ecab](https://github.com/empresslabs/powershell.testtools/commit/3b9ecabed536b079323660638d2119e1ce3a5a4f))
+- Add set location cmdlet mock - ([2e09007](https://github.com/empresslabs/powershell.testtools/commit/2e090077d1c69366e050d32b22b4ff24fe686134))
+
+
 ## [0.3.2](https://github.com/empresslabs/powershell.testtools/compare/v0.3.1..v0.3.2) - 2025-01-03
 
 ### 🐛 Bug Fixes
 
 - Execution policy does not works on unix - ([819e547](https://github.com/empresslabs/powershell.testtools/commit/819e547ccaeb8370fb403740c60d8c95f381a895))
+
+### ⚙️ Miscellaneous Tasks
+
+- Generate changelog - ([19c749c](https://github.com/empresslabs/powershell.testtools/commit/19c749cb40c7a86dde124bd11681e1f10a819822))
 
 
 ## [0.3.1](https://github.com/empresslabs/powershell.testtools/compare/v0.3.0..v0.3.1) - 2025-01-03
