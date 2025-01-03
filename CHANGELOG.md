@@ -1,9 +1,30 @@
 # ![Empress.Labs.powershell.testtools logo](https://raw.githubusercontent.com/empresslabs/powershell.testtools/refs/heads/main/.github/assets/logo.svg)
 
+## [0.3.0](https://github.com/empresslabs/powershell.testtools/compare/v0.2.0..v0.3.0) - 2025-01-03
+
+### ⛰️  Features
+
+- Inject psmodules into session state - ([9965a4e](https://github.com/empresslabs/powershell.testtools/commit/9965a4ee739520d3168968ce4a17af7adf33a066))
+- Add options to inject extra psmodules - ([1bd2ab0](https://github.com/empresslabs/powershell.testtools/commit/1bd2ab056fa45c2818d16204d5eac4095d121baf))
+
+### 🎨 Styling
+
+- Update license year - ([baf861a](https://github.com/empresslabs/powershell.testtools/commit/baf861a6b9805184695e0c691645410bdbb23af9))
+
+### 🧪 Testing
+
+- Add psmodule injection tests - ([c48b2c1](https://github.com/empresslabs/powershell.testtools/commit/c48b2c1ffd8e49314a627521a7a28c1bbd9eef8c))
+
+### ⚙️ Miscellaneous Tasks
+
+- Add SDK dependency - ([0dad37d](https://github.com/empresslabs/powershell.testtools/commit/0dad37d92e47c4bf03935b53aac31adab0ae760e))
+
+
 ## [0.2.0](https://github.com/empresslabs/powershell.testtools/compare/v0.1.1..v0.2.0) - 2025-01-03
 
 ### ⚙️ Miscellaneous Tasks
 
+- Generate changelog - ([9fd4bc9](https://github.com/empresslabs/powershell.testtools/commit/9fd4bc9a9f86613d3e7c91ba70bb8fdcca0b5cf8))
 - Add release body content from CHANGELOG.md - ([e17d2f1](https://github.com/empresslabs/powershell.testtools/commit/e17d2f1a13346f56e763c72b53881a2e5d926843))
 - Update `common` dependency to fixed version - ([32ab0d7](https://github.com/empresslabs/powershell.testtools/commit/32ab0d7c3621b4123350b908a298d0480e1c2b0d))
 
