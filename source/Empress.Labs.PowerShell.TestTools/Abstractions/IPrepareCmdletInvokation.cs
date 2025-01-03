@@ -50,7 +50,7 @@ public interface IPrepareCmdletInvokation {
   /// <summary>
   ///   Imports all the modules from the specified module path by default.
   /// </summary>
-  /// <param name="path">Path from which all modules need to be imported.</param>
+  /// <param name="pathCollection">The collection of paths from which all modules need to be imported.</param>
   /// <returns>The current instance of the configuration.</returns>
-  IPrepareCmdletInvokation WithPSModuleFromPath(AbsolutePath path);
+  IPrepareCmdletInvokation WithPSModuleFromPath(params AbsolutePath[] pathCollection);
 }
